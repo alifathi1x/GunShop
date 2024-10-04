@@ -22,12 +22,58 @@ def open_handgun_window():
     new_window.geometry("600x600")
     tk.Label(new_window, text="Hand Guns window", font="system 17").pack(pady=20)
 
+    # بارگذاری تصاویر جدید
+    handgun_img1 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\gun1.png", size=(100, 100))
+    handgun_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\gun2.png", size=(100, 100))
+    handgun_img3 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\gun3.png", size=(100, 100))
+
+    # قرار دادن تصاویر به صورت ضربدری با استفاده از label ها
+    tk.Label(new_window, image=handgun_img1).place(x=50, y=90)
+    tk.Label(new_window, text="58.98$", font="arial 15 bold", bg="gray").place(x=100, y=240)
+    tk.Label(new_window, text="SPRINGFIELD XDS"
+                              ".45 ACP", font="system 12 bold").place(x=50, y=270)
+    tk.Label(new_window, image=handgun_img2).place(x=350, y=100)
+    tk.Label(new_window, text="60.0$", font="arial 15 bold", bg="gray").place(x=430, y=270)
+    tk.Label(new_window, text="GLOCK 42"
+                              ".380 ACP", font="system 12 bold").place(x=390, y=300)
+    tk.Label(new_window, image=handgun_img3).place(x=40, y=360)
+    tk.Label(new_window, text="100.95$", font="arial 15 bold", bg="gray").place(x=90, y=520)
+    tk.Label(new_window, text="CLOCK 19"
+                              "9MM", font="system 12").place(x=90, y=560)
+
+    # نگه داشتن مرجع تصویرها
+    new_window.handgun_img1 = handgun_img1
+    new_window.handgun_img2 = handgun_img2
+    new_window.handgun_img3 = handgun_img3
+
 
 def open_shotgun_window():
     new_window = tk.Toplevel(win)
     new_window.title("Shotgun")
     new_window.geometry("600x600")
     tk.Label(new_window, text="Shotguns window", font="system 17").pack(pady=20)
+    # بارگذاری تصاویر جدید
+
+    shutgun_img1 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\shotgun3.png", size=(100, 100))
+    shutgun_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\shotgun2.png", size=(100, 100))
+
+
+
+    # قرار دادن تصاویر به صورت ضربدری با استفاده از label ها
+
+    tk.Label(new_window, image=shutgun_img1).place(x=50,y=90)
+    tk.Label(new_window,text="256.95$", font="arial 15 bold",bg="gray").place(x=250, y=200)
+    tk.Label(new_window,text="MOSSBERG 500",font="System 12").place(x=50,y=190)
+    tk.Label(new_window,image=shutgun_img2).place(x=50,y=260)
+    tk.Label(new_window,text="300.0$", font="arial 15 bold",bg="gray").place(x=340,y=370)
+    tk.Label(new_window,text="BENELLI M4",font="System 12").place(x=50,y=370)
+
+    # نگه داشتن مرجع تصویرها
+    new_window.shutgun_img1 = shutgun_img1
+    new_window.shutgun_img2 = shutgun_img2
+
+
+
 
 
 def open_sniper_window():
