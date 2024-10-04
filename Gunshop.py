@@ -109,7 +109,7 @@ def open_rifle_window():
     tk.Label(new_window,text="VEXA DCSMG",font="system 12").place(x=290,y=335)
     tk.Label(new_window,image=rifel_img3).place(x=50,y=380)
     tk.Label(new_window,text="1650.0$", font="arial 15 bold").place(x=50,y=510)
-    tk.Label(new_window,text="M4",font="system 12").place(x=290,y=510)
+    tk.Label(new_window,text="M4",font="System 12").place(x=290,y=510)
 
 
     # نگه داشتن مرجع تصویرها
