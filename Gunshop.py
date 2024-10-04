@@ -27,7 +27,7 @@ def open_handgun_window():
     handgun_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\gun2.png", size=(100, 100))
     handgun_img3 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\gun3.png", size=(100, 100))
 
-    # قرار دادن تصاویر به صورت ضربدری با استفاده از label ها
+    # قرار دادن تصاویر با استفاده از label ها
     tk.Label(new_window, image=handgun_img1).place(x=50, y=90)
     tk.Label(new_window, text="58.98$", font="arial 15 bold", bg="gray").place(x=100, y=240)
     tk.Label(new_window, text="SPRINGFIELD XDS"
@@ -57,23 +57,18 @@ def open_shotgun_window():
     shutgun_img1 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\shotgun3.png", size=(100, 100))
     shutgun_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\shotgun2.png", size=(100, 100))
 
-
-
     # قرار دادن تصاویر به صورت ضربدری با استفاده از label ها
 
-    tk.Label(new_window, image=shutgun_img1).place(x=50,y=90)
-    tk.Label(new_window,text="256.95$", font="arial 15 bold",bg="gray").place(x=250, y=200)
-    tk.Label(new_window,text="MOSSBERG 500",font="System 12").place(x=50,y=190)
-    tk.Label(new_window,image=shutgun_img2).place(x=50,y=260)
-    tk.Label(new_window,text="300.0$", font="arial 15 bold",bg="gray").place(x=340,y=370)
-    tk.Label(new_window,text="BENELLI M4",font="System 12").place(x=50,y=370)
+    tk.Label(new_window, image=shutgun_img1).place(x=50, y=90)
+    tk.Label(new_window, text="256.95$", font="arial 15 bold", bg="gray").place(x=250, y=200)
+    tk.Label(new_window, text="MOSSBERG 500", font="System 12").place(x=50, y=190)
+    tk.Label(new_window, image=shutgun_img2).place(x=50, y=260)
+    tk.Label(new_window, text="300.0$", font="arial 15 bold", bg="gray").place(x=340, y=370)
+    tk.Label(new_window, text="BENELLI M4", font="System 12").place(x=50, y=370)
 
     # نگه داشتن مرجع تصویرها
     new_window.shutgun_img1 = shutgun_img1
     new_window.shutgun_img2 = shutgun_img2
-
-
-
 
 
 def open_sniper_window():
@@ -81,6 +76,20 @@ def open_sniper_window():
     new_window.title("Sniper")
     new_window.geometry("600x600")
     tk.Label(new_window, text="Snipers window", font="system 17").pack(pady=20)
+    sniper_img1 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\sniper1.png", size=(100, 100))
+    sniper_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\sniper2.png", size=(100, 100))
+
+    # قرار دادن تصاویر به صورت ضربدری با استفاده از label ها
+    tk.Label(new_window, image=sniper_img1).place(x=50, y=90)
+    tk.Label(new_window, text="1000.0$", font="arial 15 bold", bg="gray").place(x=50, y=220)
+    tk.Label(new_window, text="L96A1", font="System 12").place(x=300, y=220)
+    tk.Label(new_window, image=sniper_img2).place(x=50, y=330)
+    tk.Label(new_window, text="1999.0$", font="arial 15 bold", bg="gray").place(x=50, y=475)
+    tk.Label(new_window, text="L115A1 SUPER MAGNUM", font="System 12").place(x=150, y=470)
+
+    # نگه داشتن مرجع تصویرها
+    new_window.sniper_img1 = sniper_img1
+    new_window.sniper_img2 = sniper_img2
 
 
 def open_rifle_window():
@@ -88,6 +97,28 @@ def open_rifle_window():
     new_window.title("Rifle")
     new_window.geometry("600x600")
     tk.Label(new_window, text="Rifles window", font="system 17").pack(pady=20)
+    rifel_img1 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\ragbar1.png", size=(100, 100))
+    rifel_img2 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\ragbar2.png", size=(100, 100))
+    rifel_img3 = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\ragbar3.png", size=(100, 100))
+
+    tk.Label(new_window, image=rifel_img1).place(x=50, y=90)
+    tk.Label(new_window,text="399.0$", font="arial 15 bold").place(x=50,y=190)
+    tk.Label(new_window,text="MM12",font="system 12").place(x=290,y=180)
+    tk.Label(new_window, image=rifel_img2).place(x=50,y=240)
+    tk.Label(new_window, text="2000.0$", font="arial 15 bold").place(x=50,y=350)
+    tk.Label(new_window,text="VEXA DCSMG",font="system 12").place(x=290,y=335)
+    tk.Label(new_window,image=rifel_img3).place(x=50,y=380)
+    tk.Label(new_window,text="1650.0$", font="arial 15 bold").place(x=50,y=510)
+    tk.Label(new_window,text="M4",font="system 12").place(x=290,y=510)
+
+
+    # نگه داشتن مرجع تصویرها
+    new_window.rifel_img1 = rifel_img1
+    new_window.rifel_img2 = rifel_img2
+    new_window.rifel_img3 = rifel_img3
+
+
+
 
 
 handgun_image = load_image(r"C:\Users\Ali\PycharmProjects\GunShop\images\a.png")
