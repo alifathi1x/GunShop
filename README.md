@@ -1,4 +1,3 @@
-# ----------------In progressing........ it will be ready soon:)
 
 # Gun shop buying system and sale guns to customers
 GunShop:
